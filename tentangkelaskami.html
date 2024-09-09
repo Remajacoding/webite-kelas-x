@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang kelas kami</title>
+    <style>
+        :root {
+            --bg--: #4B4B4B;
+            --clo--: #FFFF;
+            --bl--: #D2B48C;
+        }
+
+        a {
+            color: var(--clo--);
+            text-decoration: none;
+        }
+
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--bl--);
+            color: var(--clo--);
+            text-transform: capitalize;
+            
+        }
+
+        .navbar {
+            padding: 1.4rem 7%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--bg--);
+            z-index: 999;
+        }
+
+        .main-navbar {
+            text-align: center;
+            
+        }
+
+        .main-navbar> a {
+            font-size:1.5rem;
+            
+            
+        }
+
+        .main-navbar>i {
+            
+            position: fixed;
+            left: 7%;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .class-structure {
+            
+            padding:0  7%;
+            height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+            
+        }
+        .main-box-struktur{
+            border-radius: 10px;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        .main-box-struktur > h1 {
+            font-size: 2.5rem;
+            margin-top: 70px;
+            
+        }
+
+        .member {
+            margin-top: 20px;
+        }
+
+        .member h2 {
+            font-size: 18px;
+            
+            margin: 0;
+        }
+
+        .member p {
+            font-size: 16px;
+            
+            margin: 5px 0 0;
+        }
+
+
+        .artikel{
+            padding:0 7%;
+            height: 100dvh;
+            
+        }
+        .main-artikel{
+            position: relative;
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        .main-artikel > h2 {
+            position: absolute;
+            font-size :2.5rem;
+            top:6rem;
+        }
+        .box-artikel{
+            /* background-color:#777; */
+            width: 100%;
+        }
+        .box-artikel p {
+            font-size:16px;
+        }
+        .visi,.misi{
+            margin:2rem 0;
+        }
+        .box-artikel h2{
+            font-size:2rem;
+            margin:0.5rem 0;
+        }
+
+        @media (max-width: 1366px) {
+            html {
+                font-size: 75%;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 758px) and (max-width: 1020px) {
+            html {
+                font-size: 62.5%;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 767px) {
+            html {
+                font-size: 55%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="main-navbar">
+            <i>
+                <a href="home.html">   <=    </a>
+            </i>
+            <a>tentang kelas kami</a>
+        </nav>
+    </header>
+
+    <div class="class-structure">
+       <div class="main-box-struktur">
+        <h1>Struktur Kelas</h1>
+        <div class="member">
+            <h2>Wali Kelas</h2>
+            <p>Ibu marlina.spd</p>
+        </div>
+        <div class="member">
+            <h2>Ketua Kelas</h2>
+            <p>muhammad fitra Gezz</p>
+        </div>
+        <div class="member">
+            <h2>Wakil Ketua Kelas</h2>
+            <p>putra abadi</p>
+        </div>
+        <div class="member">
+            <h2>Sekretaris</h2>
+            <p>pitriyani</p>
+        </div>
+        <div class="member">
+            <h2>Bendahara</h2>
+            <p>maisarah</p>
+        </div>
+        <div class="member">
+            <h2>Keamanan</h2>
+            <p>padlan</p>
+        </div>
+        <div class="member">
+            <h2>Kebersihan</h2>
+            <p>eliyap>
+        </div>
+       </div>
+    </div>
+
+    <section class="artikel" id="ab">
+        <article class="main-artikel">
+            <h2>Visi Misi Kelas</h2>
+            <article class="box-artikel">
+                
+            <div class="visi">
+                <h2>visi</h2>
+            <p>"Menjadi generasi unggul dan profesional dalam menguasai keterampilan perkantoran serta mampu beradaptasi dengan perkembangan teknologi, demi masa depan yang lebih baik."</p>
+            </div>
+            <div class="misi">
+                <h2>misi</h2>
+            <p>1.Mengembangkan keterampilan administrasi perkantoran melalui praktik langsung yang relevan dengan kebutuhan industri.</p>
+            <p>2.Meningkatkan kemampuan dalam penggunaan teknologi informasi untuk mendukung otomatisasi pekerjaan kantor.</p>
+            <p>3.Membentuk karakter profesional dengan menanamkan sikap disiplin, tanggung jawab, dan integritas dalam setiap kegiatan.</p>
+            <p>4.Mendorong semangat kerjasama tim untuk mencapai tujuan bersama dan membangun lingkungan belajar yang produktif.</p>
+            </div>
+            </article>
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .box-grid{
+            display: grid;
+            grid-template-columns: repeat(2,minmax(120px,1fr));
+            grid-template-rows: repeat(3,minmax(140px,1fr));
+            gap: 20px;
+            
+        }
+        .box{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>hello word</h1>
+    <div class="box-grid">
+        <div class="box">sa</div>
+        <div class="box">dds</div>
+        <div class="box">fff</div>
+        <div class="box">fff</div>
+        <div class="box">ff</div>
+        <div class="box">ff</div>
+    </div>
+</body>
+</html>

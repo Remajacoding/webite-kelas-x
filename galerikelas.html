@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bg--: #4B4B4B;
+            --clo--: #FFFF;
+            --bl--: #D2B48C;
+        }
+
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--bl--);
+            color: var(--clo--);
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+
+        a {
+            color: var(--clo--);
+            text-decoration: none;
+        }
+
+        .navbar {
+            padding: 1.4rem 7%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--bg--);
+            z-index: 999;
+        }
+
+        .main-navbar {
+            text-align: center;
+        }
+
+        .main-navbar>a {
+            font-size: 1.5rem;
+        }
+
+        .main-navbar>i {
+            position: fixed;
+            left: 7%;
+            font-size: 1.4rem;
+        }
+
+        .hompage {
+            padding: 0 7%;
+
+
+
+        }
+
+        
+
+        @media (max-width: 1366px) {
+            html {
+                font-size: 75%;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 758px) and (max-width: 1020px) {
+            html {
+                font-size: 62.5%;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 767px) {
+            html {
+                font-size: 55%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header class="navbar">
+        <nav class="main-navbar">
+            <i>
+                <a href="home.html">  <= </a>
+                </i>
+            <a>mapel hari ini</a>
+        </nav>
+    </header>
+    <!-- navbar end -->
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daftar pelajaran minggu ke dua</title>
+    <style>
+        :root {
+            --bg--: #4B4B4B;
+            --clo--: #FFFF;
+            --bl--: #D2B48C;
+        }
+
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--bl--);
+            color: var(--clo--);
+            font-family: sans-serif;
+            text-transform: capitalize;
+            
+        }
+
+        a {
+            color: var(--clo--);
+            text-decoration: none;
+            font-size:16px;
+        }
+        p{
+            font-size:16px;
+        }
+
+        .navbar {
+            padding: 1.4rem 7%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--bg--);
+            z-index: 999;
+        }
+
+        .main-navbar {
+            text-align: center;
+        }
+
+        .main-navbar>a {
+            font-size: 1.4rem;
+        }
+
+        .main-navbar>i {
+            position: fixed;
+            left: 7%;
+            font-size: 1.4rem;
+        }
+
+        .hompage {
+            padding: 0 7%;
+
+
+
+        }
+
+        .body {
+            width: 100%;
+            height: 100dvh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .main-body>h2 {
+            position: absolute;
+            top: 7rem;
+            font-size: 2rem;
+        }
+
+        .piket-hari-ini {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background-color: azure;
+
+        }
+
+        .main-piket-hari-ini {
+            background-color: #4B4B4B;
+            box-shadow: 10px 10px 0px 0px black;
+            border-radius: 10px;
+            width: 20rem;
+            height: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-piket-hari-ini > ul {
+            font-size: 16px;
+            margin: 1.5rem;
+        }
+        li{
+            margin: 0.5rem;;
+        }
+
+        /* box-grid-piket-kelas */
+        .menu {
+            padding: 10rem 7% 2rem 7%;
+        }
+
+        .main-menu {
+            width: 100%;
+            height: 100dvh;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu>h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 0rem;
+            text-shadow: 2px 2px 0px 2px black;
+        }
+
+        .grid-boxs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top:10rem;
+        }
+
+        .main-grid-boxs {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(120px, 1fr));
+            grid-template-rows: repeat(3, minmax(160px, 1fr));
+            gap: 20px;
+        }
+
+        .boxs {
+            width: 100%;
+            background-color: var(--bg--);
+            border: 1.5px solid black;
+            border-radius: 10px;
+            box-shadow: 7px 7px 0px 0px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--clo--);
+            flex-direction: column;
+        }
+
+        .boxs>h4 {
+            font-size: 1.4rem;
+        }
+
+        
+        @media (max-width: 1366px) {
+            html {
+                font-size: 75%;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 758px) and (max-width: 1020px) {
+            html {
+                font-size: 62.5%;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 767px) {
+            html {
+                font-size: 55%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header class="navbar">
+        <nav class="main-navbar">
+            <i>
+                <a href="data.mapel.html">
+                    <= </a>
+            </i>
+            <h1>daftar pelajaran minggu ke dua</h1>
+        </nav>
+    </header>
+    <!-- navbar end -->
+    <!-- body main start -->
+
+    <!-- body main end -->
+    <!-- semua daftar piket start -->
+    <section class="menu" id="abu">
+        <main class="main-menu">
+            <h2>daftar pelajaran minggu ke dua</h2>
+
+            <div class="grid-boxs">
+                <div class="main-grid-boxs">
+                    <div class="boxs">
+                        <h4>senin</h4><br>
+                        <ul>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                        </ul>
+                    </div>
+                    <div class="boxs">
+                        <h4>senin</h4><br>
+                        <ul>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                        </ul>
+                    </div>
+                    <div class="boxs">
+                        <h4>senin</h4><br>
+                        <ul>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                        </ul>
+                    </div>
+                    <div class="boxs">
+                        <h4>senin</h4><br>
+                        <ul>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                        </ul>
+                    </div>
+                    <div class="boxs">
+                        <h4>senin</h4><br>
+                        <ul>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                        </ul>
+                    </div>
+                    <div class="boxs">
+                        <h4>senin</h4><br>
+                        <ul>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                            <li>nama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </section>
+    <!-- semua daftar piket end -->
+</body>
+
+</html>

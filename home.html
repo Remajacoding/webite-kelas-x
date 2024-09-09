@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bg--: #4B4B4B;
+            --clo--: #FFFF;
+            --bl--: #D2B48C;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        a {
+            color: var(--clo--);
+            text-decoration: none;
+        }
+
+        button>a {
+
+            color: var(--bg--);
+        }
+
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bl--);
+            color: var(--clo--);
+
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+
+        .navbar {
+            padding: 1rem 7%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--bg--);
+            z-index: 999;
+        }
+
+        .main-navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-navbar > a {
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: var(--clo--);
+            /* color: black; */
+        }
+
+        .home-menu {
+            padding: 0 7%;
+            position: relative;
+        }
+
+        .main-home-menu {
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #sapaanhari {
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: 600;
+            margin: 2rem;
+        }
+
+        #clock {
+            font-size: 5rem;
+            font-family: sans-serif;
+            font-weight: bold;
+
+        }
+
+        .box-info{
+            background-color: var(--clo--);
+            color:var(--bg--);
+            display: flex;
+            
+            padding: 1.4rem;
+            width: 100%;
+            border-radius:10px;
+
+        }
+        .main-box-info{
+            justify-content:space-around;
+            align-items:center;
+            width: 100%;
+            display: flex;
+        }
+        .main-box-info  h2 {
+            font-size:2.5rem;
+        }
+
+        /* btn body utama start */
+        .btn-utama {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-btn-utama {
+            display: flex;
+        }
+
+        .main-btn-utama>button {
+            padding: 15px 20px;
+            margin: 15px;
+
+            border: 1.5px solid black;
+            border-radius: 10px;
+            box-shadow: 7px 7px 0px 0px black;
+            font-size: 1.3rem;
+        }
+
+        /* btn body utama end */
+
+        /* menu start */
+        .menu {
+            padding: 0 7%;
+        }
+
+        .main-menu {
+            width: 100%;
+            height: 100dvh;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-menu>h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 5rem;
+            text-shadow: 2px 2px 0px 2px black;
+        }
+
+        .grid-boxs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top:10rem;
+        }
+
+        .main-grid-boxs {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(120px, 1fr));
+            grid-template-rows: repeat(3, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .boxs {
+            width: 100%;
+            background-color: var(--bg--);
+            border: 1.5px solid black;
+            border-radius: 10px;
+            box-shadow: 8px 8px 0px 0px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--clo--)
+        }
+
+        .boxs>h4 {
+            font-size: 1.4rem;
+        }
+
+        /* menu end */
+
+        /* about start */
+        .about {
+            padding: 0 7%;
+        }
+
+        .about-main {
+            width: 100%;
+            height: 100dvh;
+            position: relative;
+        }
+
+        .about-main>h2 {
+            position: absolute;
+            text-align: center;
+            font-size: 2.5rem;
+            width: 100%;
+            top: 5rem;
+        }
+
+        .about-main>p {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 8rem;
+        }
+
+        .about-row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-profile {
+            flex: 1;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2rem;
+        }
+
+        .main-image-profile {
+            width: 25rem;
+            height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-image-profile>img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+        }
+
+        .main-article {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .main-article>h3 {
+            font-size: 2rem;
+        }
+
+        .main-article>p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .main-article>button {
+            width: 20rem;
+            height: 3.5rem;
+            border-radius: 5px;
+            border: 1.5px solid black;
+            box-shadow: 6px 6px 0px 0px;
+        }
+
+        .footter {
+            padding: 1.4rem 7%;
+            background-color: var(--bg--);
+            /* padding: 0;
+  position: relative;
+  width: 100%;
+  bottom: 5rem;
+  left:0;
+  right:0;
+  height: 3rem; */
+        }
+
+        .main-footer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-footer>h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* about end */
+        @media (max-width: 1366px) {
+            html {
+                font-size: 75%;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 758px)and (max-width:1020px) {
+            html {
+                font-size: 62.5%;
+            }
+
+            .about-content {
+                /* flex-direction: column; */
+                display: block;
+            }
+
+            .image-profile {
+                margin: 3rem 0;
+            }
+
+            .main-image-profile {
+                width: 20rem;
+                height: 20rem;
+            }
+
+            .article {
+                margin: 4rem 0;
+            }
+
+            .image-profile {
+                display: flex;
+                width: 100%;
+            }
+
+            .article {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width:767px) {
+            html {
+                font-size: 55%;
+            }
+
+            .about-content {
+                display: block;
+            }
+
+            .article {
+                margin: 4rem 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="main-navbar">
+            <a href="#">website kelas x otkp/mplb</a>
+        </nav>
+    </header>
+
+    <section class="home-menu">
+        <main class="main-home-menu">
+            <!-- <h2 id="time">00:00</h2>
+            <a id="infoyear"></a> -->
+            <div id="clock"></div>
+            <h1 id="sapaanhari"></h1>
+
+            <div class="box-info">
+                <div class="main-box-info">
+                    <h2>10</h2>
+                    <h2>20</h1>
+                    <h2>20</h2>
+                </div>
+            </div>
+
+            <div class="btn-utama">
+                <div class="main-btn-utama">
+                    <a href="#abu">
+                        <button><a href="#abu">▼</a></button>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+    </section>
+
+    <!-- menu start -->
+    <section class="menu" id="abu">
+        <main class="main-menu">
+            <h2>menu kelas kami</h2>
+
+            <div class="grid-boxs">
+                <div class="main-grid-boxs">
+                    <div class="boxs">
+                        <h4><a href="tentangkelaskami.html">tentang kelas kami</a></h4>
+                    </div>
+                    <div class="boxs">
+                        <h4><a href="data.mapel.html">mata pelajaran kami</a></h4>
+                    </div>
+                    <div class="boxs">
+                        <h4><a href="daftarpiketkelas.html">daftar piket kelas kami</a></h4>
+                    </div>
+                    <div class="boxs">
+                        <h4><a href="galerikelas.html">galeri kami</a></h4>
+                    </div>
+                    <!-- <div class="boxs">
+                        <h4>daftar piket</h4>
+                    </div>
+                    <div class="boxs">
+                        <h4>daftar piket kami</h4>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="btn-utama">
+                <div class="main-btn-utama">
+                    <a href="#ab">
+                        <button><a href="#ab">▼</a></button>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+    <!-- menu end -->
+
+    <!-- about website  start  -->
+    <section class="about" id="ab">
+        <main class="about-main">
+            <h2>pembuat webite ini</h2>
+            <p>sosok <b>murit kebanggaan kami</b></p>
+
+            <div class="about-row">
+                <div class="about-content">
+
+                    <div class="image-profile">
+                        <div class="main-image-profile">
+                            <img src="IMG_20240428_093913 (2).jpg" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="article">
+                        <article class="main-article">
+
+                            <h3>muhammad fitra</h3>
+                            <p>hallo perkenalkan nama saya muhammad fitrasering di panggil fitra saya berasal dari aceh
+                                yang
+                                bertepatan di aceh tengah, kabupaten bener meriah saya berusia 16 tahun dan saya seorang
+                                progemer dan sekarang dedang belajar di dunia syber dan hecker</p>
+                            <p>saya adalah seorang pelajar dari smk 2 bener meriah dan jusuran yang saya ambil adalah
+                                perkantoran ,hoby saya adalah meretas atau mengherker kominfo andmin#123 wkwkkwkw </p>
+                            <button>lihat fotfolio fitra</button>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+    <footer class="footter">
+        <main class="main-footer">
+            <h3>opyrite 2024</h3>
+        </main>
+    </footer>
+    <!-- about website end -->
+    <script src="main.home.js"></script>
+</body>
+
+</html>
